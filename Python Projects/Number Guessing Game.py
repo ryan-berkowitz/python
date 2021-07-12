@@ -22,9 +22,11 @@ while i != 'N':
         continue
     else:
         guessList.append(y)
-    while i != 'N' and i!= 'Y':
         print("Are there any more guesses? ('Y/N')?")
         i = input()
+        while i != 'N' and i!= 'Y':
+            print("Invalid input. Are there any more guesses? ('Y/N')?")
+            i = input()
 
 #Sort function
 def sortList(n):
