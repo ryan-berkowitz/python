@@ -6,7 +6,7 @@ x = random.randint(1,100)
 
 #Input Guesses
 guessList = []
-i = 'Y'
+i = 'Inital'
 while i != 'N':
     print("Guess a number between 1-100.")
     try:
@@ -22,8 +22,9 @@ while i != 'N':
         continue
     else:
         guessList.append(y)
-    print("Are there any more guesses? ('Y/N')?")
-    i = input()
+    while i != 'N' and i!= 'Y':
+        print("Are there any more guesses? ('Y/N')?")
+        i = input()
 
 #Sort function
 def sortList(n):
