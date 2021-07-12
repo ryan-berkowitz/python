@@ -32,13 +32,15 @@ while i != 'N':
 def sortList(n):
     return abs(n - x)
 
+#List Guesses
+listMsg = "The guesses were:"
+print(listMsg)
+print(guessList)
+
 #Decide Winner
 if len(guessList) != 0:
     guessList.sort(key = sortList)
     winner = guessList[0]
-    listMsg = "The guesses were:"
-    print(listMsg)
-    print(guessList)
     guessMsg = "The number to guess was {}."
     print(guessMsg.format(x))
     winningMsg = "The winning guess is {}."
