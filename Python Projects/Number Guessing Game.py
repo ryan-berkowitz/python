@@ -9,11 +9,17 @@ guessList = []
 i = 'Y'
 while i != 'N':
     print("Guess a number between 1-100.")
-    y = int(input())
+    try:
+        y = int(input())
+    except:
+        print("Guess is not an integer. Please input another guess.")
+        continue
     if y > 100:
         print("Guess is greater than 100. Please input another guess.")
+        continue
     elif y < 1:
         print("Guess is less than 1. Please input another guess.")
+        continue
     else:
         guessList.append(y)
     print("Are there any more guesses? ('Y/N')?")
