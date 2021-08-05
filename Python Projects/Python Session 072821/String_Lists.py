@@ -1,12 +1,12 @@
 word = input("Enter a word: ")
-i=0
-g=0
+i = 0
+g = 0
 while i <= len(word)//2:
     f = -i-1
     if word[i] == word[f]:
         i = i+1
     else:
-        g=1
+        g = 1
         i = len(word)+1
 
 if g == 0:
