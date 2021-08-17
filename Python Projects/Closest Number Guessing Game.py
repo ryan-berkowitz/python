@@ -16,6 +16,7 @@ while i != 'N':
         continue
     if y > 100:
         print("Guess is greater than 100. Please input another guess.")
+        guessList 
         continue
     elif y < 1:
         print("Guess is less than 1. Please input another guess.")
