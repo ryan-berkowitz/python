@@ -10,10 +10,10 @@ while play != "N":
     player_2 = input('Player 2, choose Rock, Paper, or Scissors: ')
     if player_1 == player_2:
         print("This is a tie.")
-    elif player_1.lower() == "rock" and player_2.lower() == "paper":
-        print("Player 2 won.")
     elif player_1.lower() == "rock" and player_2.lower() == "scissors":
         print("Player 1 won.")
+    elif player_1.lower() == "rock" and player_2.lower() == "paper":
+        print("Player 2 won.")
     elif player_1.lower() == "paper" and player_2.lower() == "rock":
         print("Player 1 won.")
     elif player_1.lower() == "paper" and player_2.lower() == "scissors":
