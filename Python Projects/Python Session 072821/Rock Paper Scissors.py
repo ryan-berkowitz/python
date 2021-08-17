@@ -5,7 +5,7 @@
         #print("Someone won.")
 
 play = input('Would you like to play Rock, Paper, Scissors? (Y/N): ')
-while play != "N":
+while play != "n":
     player_1 = input('Player 1, choose Rock, Paper, or Scissors: ')
     player_2 = input('Player 2, choose Rock, Paper, or Scissors: ')
     if player_1 == player_2:
@@ -24,7 +24,7 @@ while play != "N":
         print("Player 2 won.")
     else:
         print("Oops, something went wrong. Try again.")
-    play = input('Would you like to play Rock, Paper, Scissors? (Y/N): ')
+    play = input('Would you like to play Rock, Paper, Scissors? (Y/n): ')
 
 
 
