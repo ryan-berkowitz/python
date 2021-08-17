@@ -23,7 +23,7 @@ while play != "N":
     elif player_1.lower() == "scissors" and player_2.lower() == "rock":
         print("Player 2 won.")
     else:
-        print("Someone won.")
+        print("Oops, something went wrong. Try again.")
     play = input('Would you like to play Rock, Paper, Scissors? (Y/N): ')
 
 
